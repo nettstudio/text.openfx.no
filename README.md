@@ -1,6 +1,6 @@
 # OpenFX Text Generator
 
-Advanced text generator for motion graphics and VFX software using [OpenFX](http://openeffects.org/).
+Advanced text generator node for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard.
 
 ## Compatibility
 
