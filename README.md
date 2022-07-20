@@ -12,6 +12,7 @@ Supported OpenFX host applications:
 * [Blackmagic Design](https://blackmagicdesign.com) [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) (Studio) *15+*
 * [Blackmagic Design](https://blackmagicdesign.com) [Fusion](https://www.blackmagicdesign.com/no/products/fusion) (Studio) *9+*
 * [Natron](https://natrongithub.github.io/) *2+*
+* [Sony](https://www.sonycreativesoftware.com/)/[Magix](https://www.magix.com/) [Vegas](https://www.vegascreativesoftware.com/) (Pro) *12+*
 
 ## Screenshots
 
