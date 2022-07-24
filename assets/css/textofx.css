@@ -1,9 +1,8 @@
-#main_content_wrap { background-color: #212121; border: 0; }
-#main_content, h1, h2, h2, h4, a { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; color: #fff; }
-a { font-weight: bold; }
-#header_wrap { margin: 0; padding: 0; }
+#main_content, h1, h2, h2, h4, a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
 #footer_wrap { text-align: center; }
-.inner { max-width: 1500px; }
 #header_image {
     display: block;
     margin: 0;
@@ -20,12 +19,21 @@ a { font-weight: bold; }
 @media screen and (max-width: 480px) {
     #header_image { object-fit: contain; height: fit-content;}
 }
-
-h1, h2, h3 {
-    background: -webkit-linear-gradient(#eee, #333);
-    letter-spacing: .05em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #c1c1c186;
+@media screen {
+    #main_content_wrap { background-color: #212121; border: 0; }
+    .inner { max-width: 1500px; }
+    #header_wrap { margin: 0; padding: 0; }
+    a { font-weight: bold; }
+    h1, h2, h3 {
+        background: -webkit-linear-gradient(#eee, #333);
+        letter-spacing: .05em;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #c1c1c186;
+    }
+}
+@media print {
+    * { color: #000 !important; }
+    #header_wrap, #header_image { display: none !important; }
 }
