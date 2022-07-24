@@ -13,12 +13,16 @@ Advanced text generator for motion graphics and VFX software using the [OpenFX](
 
 Supported OpenFX host applications:
 
+* [Natron](https://natrongithub.github.io/) *2+*
 * [The Foundry](https://www.foundry.com/) [Nuke](https://www.foundry.com/products/nuke) *7+*
 * [Blackmagic Design](https://blackmagicdesign.com) [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) (Studio) *15+*
 * [Blackmagic Design](https://blackmagicdesign.com) [Fusion](https://www.blackmagicdesign.com/no/products/fusion) (Studio) *9+*
-* [Natron](https://natrongithub.github.io/) *2+*
 * [Sony](https://www.sonycreativesoftware.com/)/[Magix](https://www.magix.com/) [Vegas](https://www.vegascreativesoftware.com/) (Pro) *12+*
+
+## Download
+
+**TBA**
 
 ## Support
 
-We have a public community forum hosted on [GitHub](https://github.com/nettstudio/text.openfx.no/discussions).
+We have a public community forum hosted at [GitHub](https://github.com/nettstudio/text.openfx.no/discussions).

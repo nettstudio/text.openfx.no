@@ -3,3 +3,9 @@ url: "https://text.openfx.no"
 title: "TextOFX"
 description: "Advanced text generator for motion graphics and VFX software."
 image: "assets/images/textofx-header-001.jpg"
+author:
+  title: "Ole-André Rodlie"
+  url: "https://github.com/rodlie"
+company:
+  title: "NettStudio AS"
+  url: "https://nettstudio.no"
