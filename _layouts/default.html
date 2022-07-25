@@ -15,21 +15,29 @@
     <meta property="twitter:domain" content="{{ site.domain }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}/{{ site.image }}">
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.image }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.header }}">
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.header }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css">
   </head>
   <body>
-    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ site.image }}"></div>
+    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ site.header }}"></div>
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
+        {% if site.software.windows.enabled or site.software.rhel.enabled or site.software.ubuntu.enabled %}
+        <h2 id="download">Download</h2>
+        <p>
+          {% if site.software.rhel.enabled %}<a href="" title="Download for Enterprise Linux"><img class="download download_margin_right" src="{{ site.url }}/assets/logos/redhat.png" alt="Red Hat" /></a>{% endif %}
+          {% if site.software.windows.enabled %}<a href="" title="Download for Windows"><img class="download download_margin_right" src="{{ site.url }}/assets/logos/windows.png" alt="Windows" /></a>{% endif %}
+          {% if site.software.ubuntu.enabled %}<a href="" title="Download for Ubuntu Linux"><img class="download" src="{{ site.url }}/assets/logos/ubuntu.png" alt="Ubuntu" /></p></a>{% endif %}
+        </p>
+        {% endif %}
       </section>
     </div>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.author.url }}" target="_blank">{{ site.author.title }}</a>, <a href="{{ site.company.url }}" target="_blank">{{ site.company.title }}</a>. All rights reserved.<br>Published with <a href="https://jekyllrb.com/Jekyll" target="_blank">Jekyll</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages.</a></p>
+        <p>Copyright &copy; {{ site.time | date: '%Y' }}<br><a href="{{ site.author.url }}" target="_blank">{{ site.author.title }}</a>, <a href="{{ site.company.url }}" target="_blank">{{ site.company.title }}</a>.<br>All rights reserved.<br>Header photo by <a href="https://www.pexels.com/@edgar-santana-257099788/" target="_blank">Edgar Santana</a>.<br>Published with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages.</a></p>
       </footer>
     </div>
   </body>

@@ -2,10 +2,26 @@ domain: "text.openfx.no"
 url: "https://text.openfx.no"
 title: "TextOFX"
 description: "Advanced text generator for motion graphics and VFX software."
-image: "assets/images/textofx-header-001.jpg"
+header: "assets/images/textofx-header-001.jpg"
 author:
   title: "Ole-André Rodlie"
   url: "https://github.com/rodlie"
 company:
   title: "NettStudio AS"
   url: "https://nettstudio.no"
+software:
+  version:
+    current: "1.0.0-beta.5"
+    stable: ""
+  windows:
+    enabled: false
+    suffix: "-windows.zip"
+  macos:
+    enabled: false
+    suffix: "-macos.zip"
+  rhel:
+    enabled: false
+    suffix: "-rhel.zip"
+  ubuntu:
+    enabled: false
+    suffix: "-ubuntu.zip"
