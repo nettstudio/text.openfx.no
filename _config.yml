@@ -2,7 +2,7 @@ domain: "text.openfx.no"
 url: "https://text.openfx.no"
 title: "TextOFX"
 description: "Advanced text generator for motion graphics and VFX software."
-header: "assets/images/textofx-header-001.jpg"
+image: "assets/images/textofx-header-001.jpg"
 author:
   title: "Ole-André Rodlie"
   url: "https://github.com/rodlie"

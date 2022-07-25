@@ -1,11 +1,13 @@
 ---
+title: "OpenFX Text Generator"
 layout: default
 permalink: index.html
+show_downloads: true
 ---
 
 # OpenFX Text Generator
 
-Advanced text generator for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard.
+TextOFX is an advanced text generator for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard.
 
 **Under development, will be available by the end of July or start of August 2022.**
 
@@ -22,16 +24,17 @@ Advanced text generator for motion graphics and VFX software using the [OpenFX](
 ### Systems
 
 * [Microsoft](https://microsoft.com) [Windows](https://www.microsoft.com/en-us/windows)
-  * Version 10, 11
+  * Version 10 and 11
+  * *Should work on version 7 and 8.x, but is untested*
 * [Red Hat](https://redhat.com/) [Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux) *(and compatible)*
   * Version 7.4+
   * Version 8.x
   * Version 9.x
 * [Canonical](https://www.canonical.com) [Ubuntu](https://ubuntu.com) *(and compatible)*
-  * Version 20.04.4+ LTS *(Focal)*
-  * Version 22.04.x LTS *(Jammy)*
+  * Version 20.04 *(Focal)*
+  * Version 22.04 *(Jammy)*
 
-Other systems can be added in the future *(based on demand/requests)*.
+*Support for macOS is on the roadmap.*
 
 ## Support
 

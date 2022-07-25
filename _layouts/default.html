@@ -1,30 +1,53 @@
+{% assign www_title = "" %}
+{% assign www_description = "" %}
+{% assign www_image = "" %}
+{% assign www_downloads = false %}
+{% if page.title %}
+{% assign www_title = page.title %}
+{% else %}
+{% assign www_title = site.title %}
+{% endif %}
+{% if page.description %}
+{% assign www_description = page.description %}
+{% else %}
+{% assign www_description = site.description %}
+{% endif %}
+{% if page.image %}
+{% assign www_image = page.image %}
+{% else %}
+{% assign www_image = site.image %}
+{% endif %}
+{% if page.show_downloads %}
+{% assign www_downloads = true %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <title>{{ site.title }}</title>
-    <meta property="og:title" content="{{ site.title }}">
-    <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="twitter:url" content="{{ site.url }}">
+    <title>{{ www_title }}</title>
+    <meta property="og:title" content="{{ www_title }}">
+    <meta name="twitter:title" content="{{ www_title }}">
+    <meta name="description" content="{{ www_description }}">
+    <meta property="og:description" content="{{ www_description }}">
+    <meta name="twitter:description" content="{{ www_description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
     <meta property="twitter:domain" content="{{ site.domain }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}/{{ site.header }}">
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.header }}">
+    <meta property="og:image" content="{{ site.url }}/{{ www_image }}">
+    <meta name="twitter:image" content="{{ site.url }}/{{ www_image }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css">
   </head>
   <body>
-    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ site.header }}"></div>
+    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ www_image }}"></div>
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
+        {% if www_downloads %}
         {% if site.software.windows.enabled or site.software.rhel.enabled or site.software.ubuntu.enabled %}
         <h2 id="download">Download</h2>
         <p>
@@ -32,6 +55,7 @@
           {% if site.software.windows.enabled %}<a href="" title="Download for Windows"><img class="download download_margin_right" src="{{ site.url }}/assets/logos/windows.png" alt="Windows" /></a>{% endif %}
           {% if site.software.ubuntu.enabled %}<a href="" title="Download for Ubuntu Linux"><img class="download" src="{{ site.url }}/assets/logos/ubuntu.png" alt="Ubuntu" /></p></a>{% endif %}
         </p>
+        {% endif %}
         {% endif %}
       </section>
     </div>
