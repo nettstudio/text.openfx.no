@@ -1,7 +1,6 @@
 {% assign www_title = "" %}
 {% assign www_description = "" %}
 {% assign www_image = "" %}
-{% assign www_downloads = false %}
 {% if page.title %}
 {% assign www_title = page.title %}
 {% else %}
@@ -16,9 +15,6 @@
 {% assign www_image = page.image %}
 {% else %}
 {% assign www_image = site.image %}
-{% endif %}
-{% if page.show_downloads %}
-{% assign www_downloads = true %}
 {% endif %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
@@ -47,16 +43,6 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
-        {% if www_downloads %}
-        {% if site.software.windows.enabled or site.software.rhel.enabled or site.software.ubuntu.enabled %}
-        <h2 id="download">Download</h2>
-        <p>
-          {% if site.software.rhel.enabled %}<a href="" title="Download for Enterprise Linux"><img class="download download_margin_right" src="{{ site.url }}/assets/logos/redhat.png" alt="Red Hat" /></a>{% endif %}
-          {% if site.software.windows.enabled %}<a href="" title="Download for Windows"><img class="download download_margin_right" src="{{ site.url }}/assets/logos/windows.png" alt="Windows" /></a>{% endif %}
-          {% if site.software.ubuntu.enabled %}<a href="" title="Download for Ubuntu Linux"><img class="download" src="{{ site.url }}/assets/logos/ubuntu.png" alt="Ubuntu" /></p></a>{% endif %}
-        </p>
-        {% endif %}
-        {% endif %}
       </section>
     </div>
     <div id="footer_wrap" class="outer">

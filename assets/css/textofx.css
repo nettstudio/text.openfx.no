@@ -2,7 +2,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #fff;
 }
-#footer_wrap { text-align: center; }
+#footer_wrap {
+    text-align: center;
+    font-size: small;
+}
 img {
     margin: 0;
     padding: 0;
@@ -43,3 +46,5 @@ img {
     * { color: #000 !important; }
     #header_wrap, #header_image { display: none !important; }
 }
+
+table { width: 100%; }
