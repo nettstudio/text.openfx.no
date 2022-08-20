@@ -27,10 +27,6 @@ We have a community forum hosted on [GitHub](https://github.com/nettstudio/text.
 
 ## Controls
 
-### Main
-
-Text input.
-
 ID | Label | Description
 --- | --- | ---
 ``text`` | **Text** | The text that will be drawn.
