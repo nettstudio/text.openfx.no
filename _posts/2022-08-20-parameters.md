@@ -4,7 +4,6 @@ description: "Available TextOFX parameters and descriptions."
 categories: docs
 layout: default
 goback: true
-nodate: true
 ---
 
 ID | Label | Description

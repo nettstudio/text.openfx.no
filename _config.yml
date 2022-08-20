@@ -9,3 +9,4 @@ author:
 company:
   title: "NettStudio AS"
   url: "https://nettstudio.no"
+permalink: /:categories/:title:output_ext
