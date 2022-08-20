@@ -42,12 +42,24 @@
     <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ www_image }}"></div>
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <h1>{{ page.title }}</h1>
+        {% if page.date %}
+        <div class="date">{{ page.date | date: "%-d %B %Y" }}</div>
+        {% endif %}
+        <p class="lead">{{ page.description }}</p>
         {{ content }}
+        {% if page.news %}
+        <ul>{% for post in site.posts %}<li><a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} : {{ post.title }}</a></li>{% endfor %}</ul>
+        {% endif %}
+        {% if page.goback %}
+        <div class="goback"><a href="{{ site.url }}">⮜ back</a></div>
+        {% endif %}
       </section>
     </div>
+    <hr>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Copyright &copy; {{ site.time | date: '%Y' }}<br><a href="{{ site.author.url }}" target="_blank">{{ site.author.title }}</a>, <a href="{{ site.company.url }}" target="_blank">{{ site.company.title }}</a>.<br>All rights reserved.<br>Header photo by <a href="https://www.pexels.com/@edgar-santana-257099788/" target="_blank">Edgar Santana</a>.<br>Published with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages.</a></p>
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.author.url }}" target="_blank">{{ site.author.title }}</a>, <a href="{{ site.company.url }}" target="_blank">{{ site.company.title }}</a>. All rights reserved.<br>Header photo by <a href="https://www.pexels.com/@edgar-santana-257099788/" target="_blank">Edgar Santana</a>.<br>Published with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages.</a></p>
       </footer>
     </div>
   </body>
