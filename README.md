@@ -7,16 +7,19 @@ show_downloads: true
 
 # OpenFX Text Generator
 
-TextOFX is an advanced text generator for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard published by the [Academy Software Foundation](https://www.aswf.io).
+![Screenshot of TextOFX in Fusion 18](assets/images/textofx-screenshot-fusion18.png "Screenshot of TextOFX in Fusion 18")
+![Screenshot of TextOFX in Nuke 7](assets/images/textofx-screenshot-nuke7.png "Screenshot of TextOFX in Nuke 7")
+
+TextOFX is an advanced text generator image effect for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard published by the [Academy Software Foundation](https://www.aswf.io).
 
 **Under development, will be available by the end of August 2022.**
 
 ## Compatibility
 
-* [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) by [Blackmagic Design](https://blackmagicdesign.com)
-* [Fusion](https://www.blackmagicdesign.com/no/products/fusion) by [Blackmagic Design](https://blackmagicdesign.com)
-* [Natron](https://natrongithub.github.io/)
 * [Nuke](https://www.foundry.com/products/nuke) by [The Foundry](https://www.foundry.com/)
+* [Fusion](https://www.blackmagicdesign.com/no/products/fusion) by [Blackmagic Design](https://blackmagicdesign.com)
+* [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) by [Blackmagic Design](https://blackmagicdesign.com)
+* [Natron](https://natrongithub.github.io/)
 
 ## Support
 

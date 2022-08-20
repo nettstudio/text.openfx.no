@@ -48,3 +48,11 @@ img {
 }
 
 table { width: 100%; }
+
+img + em { display: block; }
+
+p img {
+    margin: .1em;
+    border: 2px solid #131313;
+    border-radius: .25em;
+}
