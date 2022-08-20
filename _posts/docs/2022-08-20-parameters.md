@@ -1,8 +1,10 @@
 ---
 title: "OpenFX Parameters"
+description: "Available TextOFX parameters and descriptions."
+categories: docs
 layout: default
-permalink: params.html
 goback: true
+nodate: true
 ---
 
 ID | Label | Description

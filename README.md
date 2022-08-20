@@ -1,9 +1,10 @@
 ---
 title: "OpenFX Text Generator"
-description: "TextOFX is an advanced text generator for motion graphics and VFX software using the OpenFX standard published by the Academy Software Foundation."
+description: "Advanced text generator for motion graphics and VFX software using the OpenFX standard published by the Academy Software Foundation."
 layout: default
 permalink: index.html
-news: true
+release: true
+docs: true
 ---
 
 ![Screenshot of TextOFX in Fusion 18](assets/images/textofx-screenshot-fusion18.png "Screenshot of TextOFX in Fusion 18")
@@ -23,5 +24,3 @@ news: true
 ## Support
 
 We have a community forum hosted on [GitHub](https://github.com/nettstudio/text.openfx.no/discussions).
-
-## News
