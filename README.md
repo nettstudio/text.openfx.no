@@ -9,6 +9,8 @@ show_downloads: true
 
 ![Screenshot of TextOFX in Fusion 18](assets/images/textofx-screenshot-fusion18.png "Screenshot of TextOFX in Fusion 18")
 ![Screenshot of TextOFX in Nuke 7](assets/images/textofx-screenshot-nuke7.png "Screenshot of TextOFX in Nuke 7")
+![Screenshot of TextOFX in use on Natron](assets/images/textofx-screenshot-usage-natron-02.png "Screenshot of TextOFX in use on Natron")
+![Screenshot of TextOFX in use on Natron](assets/images/textofx-screenshot-usage-natron-01.png "Screenshot of TextOFX in use on Natron")
 
 TextOFX is an advanced text generator image effect for motion graphics and VFX software using the [OpenFX](http://openeffects.org/) standard published by the [Academy Software Foundation](https://www.aswf.io).
 
