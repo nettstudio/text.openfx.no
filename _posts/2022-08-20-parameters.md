@@ -1,6 +1,6 @@
 ---
-title: "OpenFX Parameters"
-description: "Available TextOFX parameters and descriptions."
+title: "TextOFX Parameters"
+description: "Available parameters for TextOFX."
 categories: docs
 layout: default
 goback: true

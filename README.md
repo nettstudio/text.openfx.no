@@ -5,6 +5,7 @@ layout: default
 permalink: index.html
 release: true
 docs: true
+header: true
 ---
 
 ![Screenshot of TextOFX in Fusion 18](assets/images/textofx-screenshot-fusion18.png "Screenshot of TextOFX in Fusion 18")
