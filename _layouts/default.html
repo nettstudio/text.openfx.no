@@ -1,6 +1,7 @@
 {% assign www_title = "" %}
 {% assign www_description = "" %}
-{% assign www_image = "" %}
+{% assign header_image = "" %}
+{% assign meta_image = "" %}
 {% if page.title %}
 {% assign www_title = page.title %}
 {% else %}
@@ -11,10 +12,15 @@
 {% else %}
 {% assign www_description = site.description %}
 {% endif %}
-{% if page.image %}
-{% assign www_image = page.image %}
+{% if page.header %}
+{% assign header_image = page.header %}
 {% else %}
-{% assign www_image = site.image %}
+{% assign header_image = site.header %}
+{% endif %}
+{% if site.meta %}
+{% assign meta_image = site.meta %}
+{% elsif page.meta %}
+{% assign meta_image = page.meta %}
 {% endif %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
@@ -33,13 +39,17 @@
     <meta property="twitter:domain" content="{{ site.domain }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}/{{ www_image }}">
-    <meta name="twitter:image" content="{{ site.url }}/{{ www_image }}">
+    <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
+    <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css">
   </head>
   <body>
-    {% if page.header %}<div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ www_image }}"></div>{% endif %}
+    <div id="header">
+      <a href="{{ site.url }}"><div id="headerLeft"></div></a>
+      <a href="{{ site.company.url }}" target="_blank"><div id="headerRight"></div></a>
+    </div>
+    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ header_image }}"></div>
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>{{ page.title }}</h1>

@@ -73,3 +73,20 @@ hr {
     border-bottom: 1px solid #373737;
     background: none;
 }
+#header {
+    height: 90px;
+    background-color: #373737;
+    clear: both;
+}
+#headerLeft {
+    width: 299px;
+    height: 90px;
+    float: left;
+    background: url(/assets/images/headerLeft.png) no-repeat #373737;
+}
+#headerRight {
+    width: 210px;
+    height: 90px;
+    float: right;
+    background: url(/assets/images/headerRight.png) no-repeat #373737;
+}
