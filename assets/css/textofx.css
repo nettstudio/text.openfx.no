@@ -75,18 +75,29 @@ hr {
 }
 #header {
     height: 90px;
-    background-color: #373737;
+    background-color: #383838;
     clear: both;
 }
 #headerLeft {
-    width: 299px;
+    width: 349px;
     height: 90px;
     float: left;
-    background: url(/assets/images/headerLeft.png) no-repeat #373737;
+    background: url(/assets/images/headerLeft.png) no-repeat #383838;
 }
 #headerRight {
     width: 210px;
     height: 90px;
     float: right;
     background: url(/assets/images/headerRight.png) no-repeat #373737;
+}
+.vad {
+    position: relative;
+    overflow: hidden;
+}
+.vad video {
+    width: 100%;
+    height: 100%;
+}
+.video-cover video {
+    object-fit: contain;
 }
