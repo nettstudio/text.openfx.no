@@ -75,14 +75,14 @@ hr {
 }
 #header {
     height: 90px;
-    background-color: #383838;
+    background-color: #373737;
     clear: both;
 }
 #headerLeft {
     width: 349px;
     height: 90px;
     float: left;
-    background: url(/assets/images/headerLeft.png) no-repeat #383838;
+    background: url(/assets/images/headerLeft.png) no-repeat #373737;
 }
 #headerRight {
     width: 210px;
