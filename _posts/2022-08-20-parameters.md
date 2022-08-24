@@ -1,6 +1,6 @@
 ---
 title: "TextOFX Parameters"
-description: "Available parameters for TextOFX."
+description: "Available parameters for TextOFX v1.0."
 categories: docs
 layout: default
 goback: true
@@ -74,7 +74,7 @@ ID | Label | Description
 ``pathPreview`` | **Preview** | Preview paths *(draw lines)*.
 ``paths`` | **Paths** | Paths in use.
 
-## Advanced/Other
+## Other
 
 ID | Label | Description
 --- | --- | ---

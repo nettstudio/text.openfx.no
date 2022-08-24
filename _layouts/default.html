@@ -49,7 +49,7 @@
       <a href="{{ site.url }}"><div id="headerLeft"></div></a>
       <a href="{{ site.company.url }}" target="_blank"><div id="headerRight"></div></a>
     </div>
-    <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ header_image }}"></div>
+    {% if page.showHeader %}<div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ header_image }}"></div>{% endif %}
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>{{ page.title }}</h1>
@@ -57,15 +57,9 @@
         {% if page.image %}<p><img src="{{ site.url }}/{{ page.image }}"></p>{% endif %}
         <p class="lead">{{ page.description }}</p>
         {{ content }}
-        {% if page.release %}
-        <h2>Releases</h2>
-        <ul>{% for post in site.categories["release"] %}<li><a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} : {{ post.title }}</a></li>{% endfor %}</ul>
-        {% endif %}
-        {% if page.docs %}
-        <h2>Documentation</h2>
-        <ul>{% for post in site.categories["docs"] %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>
-        {% endif %}
-        {% if page.goback %}<div class="goback"><a href="{{ site.url }}">⮜ back</a></div>{% endif %}
+        {% if page.release %}<h2>Releases</h2><ul>{% for post in site.categories["release"] %}<li><a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }} : {{ post.title }}</a></li>{% endfor %}</ul>{% endif %}
+        {% if page.docs %}<h2>Documentation</h2><ul>{% for post in site.categories["docs"] %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>{% endif %}
+        {% if page.goback %}<div class="goback"><a href="{{ site.url }}">&larr; back</a></div>{% endif %}
       </section>
     </div>
     <hr>
