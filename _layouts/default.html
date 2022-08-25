@@ -41,6 +41,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
     <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
+    <link rel="alternate" type="application/rss+xml" title="TextOFX news feed" href="{{ site.url }}/feed.xml">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css">
   </head>
@@ -52,7 +53,7 @@
     {% if page.showHeader %}
     <!-- <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ header_image }}"></div> -->
     <div class="vad video-contain">
-      <video width="2560" playsinline muted autoplay loop>
+      <video width="2560" poster="{{ site.url }}/assets/images/textofx-header-001-290.png" playsinline muted autoplay loop>
       <source src="{{ site.url }}/assets/videos/textofx-header-001.mp4" type="video/mp4">
     </video>
     </div>
