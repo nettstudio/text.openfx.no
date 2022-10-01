@@ -1,5 +1,5 @@
 ---
-title: "TextOFX Parameters"
+title: "TextOFX v1.0 Parameters"
 description: "Available parameters for TextOFX v1.0."
 categories: docs
 layout: default
