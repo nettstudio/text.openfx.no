@@ -81,6 +81,4 @@ ID | Label | Description
 ID | Label | Description
 --- | --- | ---
 ``glyphs`` | **Glyphs** | Render glyphs. Should not be used during animation.
-~~``hintStyle``~~ | ~~**Hint style**~~ | ~~This controls whether to fit font outlines to the pixel grid, and if so, whether to optimize for fidelity or contrast. Should not be used during animation.~~ **Removed in v1.1.**
-~~``hintMetrics``~~ | ~~**Hint metrics**~~ | ~~This controls whether metrics are quantized to integer values in device units. Should not be used during animation.~~ **Removed in v1.1.**
 ``frameRange`` | **Frame Range** | Time domain.
