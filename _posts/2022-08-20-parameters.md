@@ -54,6 +54,7 @@ ID | Label | Description
 ``skewX`` | **Skew X** | Skew the text layout *(X)*.
 ``skewY`` | **Skew Y** | Skew the text layout *(Y)*.
 ``rotate`` | **Rotate** | Rotate the text layout.
+``layoutWidth`` | **Layout** | Set width for the text layout when using translate (custom position). Default (0) is the width of the text or source/project format. **Added in v1.1**.
 
 ## RoD
 
