@@ -10,7 +10,7 @@ showHeader: true
 
 <script src="https://gumroad.com/js/gumroad.js"></script>
 <div style="text-align:right;">
-<a class="gumroad-button" href="https://rodlie.gumroad.com/l/spjxu">Get TextOFX on</a>
+<a class="gumroad-button" href="https://rodlie.gumroad.com/l/fkaef">Get TextOFX on</a>
 </div>
 
 ![Screenshot of TextOFX in Fusion 18](assets/images/textofx-screenshot-fusion18.png "Screenshot of TextOFX in Fusion 18")
