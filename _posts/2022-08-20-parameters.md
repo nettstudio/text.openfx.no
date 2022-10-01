@@ -1,6 +1,6 @@
 ---
-title: "TextOFX v1.0 Parameters"
-description: "Available parameters for TextOFX v1.0."
+title: "TextOFX Parameters"
+description: "Available parameters for TextOFX."
 categories: docs
 layout: default
 goback: true
@@ -9,6 +9,7 @@ goback: true
 ID | Label | Description
 --- | --- | ---
 ``text`` | **Text** | The text that will be drawn.
+``file`` | **File** | Import text or markup from file. **Added in v1.1**.
 
 ## Properties
 
@@ -29,6 +30,7 @@ ID | Label | Description
 ``style`` | **Style** | Font family style.
 ``weight`` | **Weight** | The weight field specifies how bold or light the font should be.
 ``stretch`` | **Stretch** | Width of the font relative to other designs within a family.
+``showChars`` | **Characters** | Restrict which characters to show (1, 3, 5). **Added in v1.1**.
 
 ## Color
 
@@ -79,6 +81,6 @@ ID | Label | Description
 ID | Label | Description
 --- | --- | ---
 ``glyphs`` | **Glyphs** | Render glyphs. Should not be used during animation.
-``hintStyle`` | **Hint style** | This controls whether to fit font outlines to the pixel grid, and if so, whether to optimize for fidelity or contrast. Should not be used during animation.
-``hintMetrics`` | **Hint metrics** | This controls whether metrics are quantized to integer values in device units. Should not be used during animation.
+~~``hintStyle``~~ | ~~**Hint style**~~ | ~~This controls whether to fit font outlines to the pixel grid, and if so, whether to optimize for fidelity or contrast. Should not be used during animation.~~ **Removed in v1.1.**
+~~``hintMetrics``~~ | ~~**Hint metrics**~~ | ~~This controls whether metrics are quantized to integer values in device units. Should not be used during animation.~~ **Removed in v1.1.**
 ``frameRange`` | **Frame Range** | Time domain.

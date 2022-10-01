@@ -26,13 +26,3 @@ showHeader: true
 ## Support
 
 We have a community forum hosted on [GitHub](https://github.com/nettstudio/text.openfx.no/discussions).
-
-## Roadmap
-
-* Support for basic HTML/CSS *("Rich text")*
-* SVG support
-* Path support
-* Multiplane support
-* Support more applications
-
-![Screenshot of TextOFX in use on Natron](assets/images/textofx-screenshot-usage-natron-01.png "Screenshot of TextOFX in use on Natron")
