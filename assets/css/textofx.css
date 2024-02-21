@@ -1,4 +1,4 @@
-p { text-align: justify; }
+
 p.lead { font-size: 25px; }
 #main_content, h1, h2, h2, h4, a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -75,14 +75,14 @@ hr {
 }
 #header {
     height: 90px;
-    background-color: #373737;
+    background-color: black;
     clear: both;
 }
 #headerLeft {
     width: 349px;
     height: 90px;
     float: left;
-    background: url(/assets/images/headerLeft.png) no-repeat #373737;
+    background: url(/assets/images/headerLeft.png) no-repeat;
 }
 #headerRight {
     width: 210px;
