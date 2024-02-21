@@ -70,7 +70,7 @@
       <section id="main_content" class="inner">
         <h1>{{ page.title }}</h1>
         {% if page.date and page.categories contains "release" %}<div class="date">{{ page.date | date: "%-d %B %Y" }}</div>{% endif %}
-        {% if page.image %}<p><img src="{{ site.url }}/{{ page.image }}"></p>{% endif %}
+        {% if page.image %}<p><img class="hero" src="{{ site.url }}/{{ page.image }}"></p>{% endif %}
         <p class="lead">{{ page.description }}</p>
         {{ content }}
         {% if page.release %}<h2>Releases</h2><ul>{% for post in site.categories["release"] %}<li><a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}</ul>{% endif %}

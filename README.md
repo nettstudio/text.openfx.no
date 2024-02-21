@@ -18,3 +18,7 @@ showHeader: false
 * [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) by [Blackmagic Design](https://blackmagicdesign.com)
 * [Nucoda](https://filmworkz.com/nucoda/) by [Filmworkz](https://filmworkz.com) *(TBA)*
 * [Natron](https://natrongithub.github.io/)
+
+## Nucoda
+
+We provide a custom version of TextOFX for Nucoda [here](nucoda.html).
