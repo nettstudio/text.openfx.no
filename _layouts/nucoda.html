@@ -1,0 +1,83 @@
+{% assign www_title = "" %}
+{% assign www_description = "" %}
+{% assign header_image = "" %}
+{% assign meta_image = "" %}
+{% if page.title %}
+{% assign www_title = page.title %}
+{% else %}
+{% assign www_title = site.title %}
+{% endif %}
+{% if page.description %}
+{% assign www_description = page.description %}
+{% else %}
+{% assign www_description = site.description %}
+{% endif %}
+{% if page.header %}
+{% assign header_image = page.header %}
+{% else %}
+{% assign header_image = site.header %}
+{% endif %}
+{% if site.meta %}
+{% assign meta_image = site.meta %}
+{% elsif page.meta %}
+{% assign meta_image = page.meta %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <title>{{ www_title }}</title>
+    <meta property="og:title" content="{{ www_title }}">
+    <meta name="twitter:title" content="{{ www_title }}">
+    <meta name="description" content="{{ www_description }}">
+    <meta property="og:description" content="{{ www_description }}">
+    <meta name="twitter:description" content="{{ www_description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:domain" content="{{ site.domain }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
+    <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
+    <link rel="alternate" type="application/rss+xml" title="TextOFX news feed" href="{{ site.url }}/feed.xml">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css?v=1">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LW9SRVQ03V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LW9SRVQ03V');
+</script>
+<script src="https://gumroad.com/js/gumroad.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <a href="{{ site.url }}"><img src="/assets/images/headerLeft.png"></a>
+      <a href="https://openeffects.org" target="_blank"><img class="ofx" src="/assets/images/openfx-icon-white.png"></a>
+    </div>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {% if page.image %}<p><img class="hero" src="{{ site.url }}/{{ page.image }}"></p>{% endif %}
+        <h1>{{ page.title }}</h1>
+        <p class="lead">{{ page.description }}</p>
+        <p><img class="hero nophone" src="{{ site.baseurl }}/assets/images/textofx-nucoda-parameters.png"></p>
+        <div class="blocks">
+          <a href="https://download.openfx.no/software/TextOFX/releases/{{ page.rel_branch }}/{{ page.rel_prefix }}-{{ page.latest_version }}-DEMO-{{ page.rel_suffix }}"><div class="btn"><h3>Download Trial</h3></div></a>
+          <a href="{{ page.gumroad }}"><div class="btn"><h3>Purchase Now</h3></div></a>
+        </div>
+        {{ content }}
+      </section>
+    </div>
+    <hr>
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.author.title }}, {{ site.company.title }}. All rights reserved.<br>Published with <a href="https://jekyllrb.com" target="_blank">Jekyll</a> and <a href="https://pages.github.com" target="_blank">GitHub Pages.</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

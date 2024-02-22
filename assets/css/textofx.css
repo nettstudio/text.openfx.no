@@ -27,6 +27,7 @@ img {
     #header_image { object-fit: contain; height: fit-content;}
     p img { max-width: unset; width: 100%; }
     .ofx { display: none; }
+    .nophone { display: none; }
 }
 @media screen {
     body { font-size: 20px; }
@@ -119,4 +120,43 @@ img.hero {
 #main_content {
     padding-top: unset;
     padding: 1em;
+}
+
+div.blocks {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border-radius: .25em;
+    background-color: seagreen;
+    padding: .6em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #212121;
+}
+
+.btn h3,
+.btn p {
+    color: white;
+}
+
+.blocks a:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 1px solid white;
+}
+
+hr {
+    background: unset !important;
 }
