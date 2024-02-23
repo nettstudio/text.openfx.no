@@ -30,6 +30,18 @@ Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a t
 2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
 3. Launch Nucoda. TextOFX should now be available as an effect under `Text/Text Generator`.
 
+# Fonts
+
+Nucoda will scan for new fonts on each launch.
+
+1. `C:\Windows\Fonts`
+2. `C:\Users\USERNAME\AppData\Local\Microsoft\Windows\Fonts`
+3. `C:\Users\USERNAME\.fonts`
+
+The font cache is stored in `C:\Users\USERNAME\AppData\Local\fontconfig\cache`.
+
+TrueType fonts (TTF) are recommended.
+
 # Limitations
 
 Nucoda has limited support for OpenFX string parameters. This limits the usability of the text input user interface. As a workaround use the text file option in TextOFX (edit text in notepad or similar).
