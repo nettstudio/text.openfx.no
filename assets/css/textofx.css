@@ -160,3 +160,10 @@ div.blocks {
 hr {
     background: unset !important;
 }
+
+@media print {
+    .hero,
+    .btn,
+    .nophone,
+    #header { display: none; }
+}
