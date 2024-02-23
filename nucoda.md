@@ -13,23 +13,6 @@ rel_suffix: "Windows-x64.zip"
 gumroad: "https://rodlie.gumroad.com/l/textofx-v1-1-nucoda"
 ---
 
-# Installation
-
-Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a temporary location.
-
-**Automatic Installation**
-
-1. Close Nucoda before proceeding.
-2. Open the extracted folder and double-click on `Setup.exe`.
-3. Follow the on-screen instructions to complete the installation.
-4. Launch Nucoda. TextOFX will be available as an effect under `Text/Text Generator`.
-
-**Manual Installation**
-
-1. Close Nucoda before proceeding.
-2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
-3. Launch Nucoda. TextOFX should now be available as an effect under `Text/Text Generator`.
-
 # Parameters
 
 ID | Label | Description
@@ -60,9 +43,28 @@ ID | Label | Description
 ``file`` | **File** | Import text or markup from file.
 ``reloadText`` | **Reload Text File** | Reload Text File.
 
+# Installation
+
+Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a temporary location.
+
+**Automatic Installation**
+
+1. Close Nucoda before proceeding.
+2. Open the extracted folder and double-click on `Setup.exe`.
+3. Follow the on-screen instructions to complete the installation.
+4. Launch Nucoda. TextOFX will be available as an effect under `Text/Text Generator`.
+
+**Manual Installation**
+
+1. Close Nucoda before proceeding.
+2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
+3. Launch Nucoda. TextOFX should now be available as an effect under `Text/Text Generator`.
+
 # Fonts
 
 Nucoda will scan for new fonts on each launch.
+
+Search locations:
 
 1. `C:\Windows\Fonts`
 2. `C:\Users\USERNAME\AppData\Local\Microsoft\Windows\Fonts`
