@@ -30,6 +30,36 @@ Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a t
 2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
 3. Launch Nucoda. TextOFX should now be available as an effect under `Text/Text Generator`.
 
+# Parameters
+
+ID | Label | Description
+--- | --- | ---
+``size`` | **Size** | Font size in pixels.
+``strokeSize`` | **Stroke** | Stroke size.
+``letterSpace`` | **Letter spacing** | Spacing between letters.
+``lineSpace`` | **Line spacing** | Spacing between lines.
+``color`` | **Fill** | The text fill color.
+``strokeColor`` | **Stroke** | The stroke fill color.
+``wrap`` | **Word wrap** | Wrap the lines to the desired width.
+``halign`` | **Horizontal align** | Horizontal text align.
+``valign`` | **Vertical align** | Vertical text align.
+``style`` | **Style** | Font family style.
+``weight`` | **Weight** | The weight field specifies how bold or light the font should be.
+``stretch`` | **Stretch** | Width of the font relative to other designs within a family.
+``translate`` | **Translate** | Enable translate.
+``position`` | **Position** | Custom position of the text layout, if translate is enabled.
+``layoutWidth`` | **Custom Width** | Set width for the text layout when using translate (custom position). Default (0) is the width of the text or source/project format.
+``scale`` | **Scale** | Scale the text layout.
+``skewX`` | **Skew X** | Skew the text layout *(X)*.
+``skewY`` | **Skew Y** | Skew the text layout *(Y)*.
+``rotate`` | **Rotate** | Rotate the text layout.
+``name`` | **Select font** | Select the font family to be used.
+``font`` | **Font** | Font family in use.
+``text`` | **Text** | The text that will be drawn.
+``markup`` | **Markup** | Parse text as [Pango Text Attribute Markup Language](https://docs.gtk.org/Pango/pango_markup.html).
+``file`` | **File** | Import text or markup from file.
+``reloadText`` | **Reload Text File** | Reload Text File.
+
 # Fonts
 
 Nucoda will scan for new fonts on each launch.

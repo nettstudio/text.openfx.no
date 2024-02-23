@@ -167,3 +167,9 @@ hr {
     .nophone,
     #header { display: none; }
 }
+
+table {
+    width: 100%;
+}
+
+th, td { padding: .5em; }
