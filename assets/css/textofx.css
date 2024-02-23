@@ -28,6 +28,8 @@ img {
     p img { max-width: unset; width: 100%; }
     .ofx { display: none; }
     .nophone { display: none; }
+    table { font-size: medium; }
+    code, pre { word-wrap: break-word; }
 }
 @media screen {
     body { font-size: 20px; }
