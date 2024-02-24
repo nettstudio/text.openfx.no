@@ -176,3 +176,10 @@ table {
 }
 
 th, td { padding: .5em; }
+
+code, pre {
+    color: white !important;
+    background-color: #373737 !important;
+}
+
+.highlight { background-color: unset !important; }
