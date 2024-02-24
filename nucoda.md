@@ -39,7 +39,7 @@ ID | Label | Description
 ``name`` | **Select font** | Select the font family to be used.
 ``font`` | **Font** | Font family in use.
 ``text`` | **Text** | The text that will be drawn.
-``markup`` | **Markup** | Parse text as [Pango Text Attribute Markup Language](https://docs.gtk.org/Pango/pango_markup.html).
+``markup`` | **Markup** | Parse text as markup
 ``file`` | **File** | Import text or markup from file.
 ``reloadText`` | **Reload Text File** | Reload Text File.
 
@@ -60,6 +60,12 @@ Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a t
 2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
 3. Launch Nucoda. TextOFX should now be available as an effect under `Text/Text Generator`.
 
+# Limitations
+
+Nucoda has limited support for OpenFX string parameters. This limits the usability of the text input user interface. As a workaround use the text file option in TextOFX (edit text in notepad or similar).
+
+If you want proper text input contact [Filmworkz](https://filmworkz.com/nucoda/) and request support for `kOfxParamStringIsMultiLine` in Nucoda.
+
 # Fonts
 
 Nucoda will scan for new fonts on each launch.
@@ -74,11 +80,62 @@ The font cache is stored in `C:\Users\USERNAME\AppData\Local\fontconfig\cache`.
 
 TrueType fonts (TTF) are recommended.
 
-# Limitations
+# Markup
 
-Nucoda has limited support for OpenFX string parameters. This limits the usability of the text input user interface. As a workaround use the text file option in TextOFX (edit text in notepad or similar).
+TextOFX allows you to format text further using a simple markup language. This means you can easily make certain parts of your text bold, italic, smaller, bigger, or even change the font.
 
-If you want proper text input contact [Filmworkz](https://filmworkz.com/nucoda/) and request support for `kOfxParamStringIsMultiLine` in Nucoda.
+## Examples
+
+#### Simple Lower Thirds
+
+Text input *(remember to enable ``markup`` parameter)*:
+
+```
+<span font="Futura Bold 50">John Doe</span>
+<span font="Futura Italic 25">Work title, at Company</span>
+```
+
+Result:
+
+![Lower Thirds output](assets/images/textofx-markup-example-01.png)
+
+## Attributes/Tags
+The most general markup tag is **``<span>``**, then there are some convenience tags:
+
+* **``<b>``** - Bold
+* **``<i>``** - Italic
+* **``<s>``** - Strikethrough
+* **``<u>``** - Underline
+
+**``<span>``**
+
+* **``font=""``**
+  * A font description string, such as “Sans Italic 12”. Note that any other span attributes will override this description. So if you have “Sans Italic” and also a ``style=”normal”`` attribute, you will get Sans normal, not italic.
+
+* **``size=""``**
+  * Font size in 1024ths of a point, or in points (e.g. ‘12.5pt’), or one of the absolute sizes ‘xx-small’, ‘x-small’, ‘small’, ‘medium’, ‘large’, ‘x-large’, ‘xx-large’, or a percentage (e.g. ‘200%’), or one of the relative sizes ‘smaller’ or ‘larger’.
+* **``style=""``**
+  * One of ‘normal’, ‘oblique’, ‘italic’.
+* **``weight=""``**
+  * One of ‘ultralight’, ‘light’, ‘normal’, ‘bold’, ‘ultrabold, ‘heavy’, or a numeric weight.
+* **``variant=""``**
+  * One of ‘normal’, ‘small-caps’, ‘all-small-caps’, ‘petite-caps’, ‘all-petite-caps’, ‘unicase’, ‘title-caps’.
+* **``stretch=""``**
+  * One of ‘ultracondensed’, ‘extracondensed’, ‘condensed’, ‘semicondensed’, ‘normal’, ‘semiexpanded’, ‘expanded’, ‘extraexpanded’, ‘ultraexpanded’.
+* **``underline=""``**
+  * One of ‘none’, ‘single’, ‘double’, ‘low’, ‘error’.
+* **``overline=""``**
+  * One of ‘none’ or ‘single’.
+* **``strikethrough=""``**
+  * ‘true’ or ‘false’ whether to strike through the text.
+* **``letter_spacing=""``**
+  * Inter-letter spacing in 1024ths of a point.
+* **``allow_breaks=""``**
+  * ‘true’ or ‘false’ to indicate whether breaking lines is allowed.
+* **``line_height=""``**
+  * Overrides the line height. The value can be either a factor (< 1024) that is used to scale up the logical extents of runs or an absolute value (in 1024th of a point).
+* **``text_transform=""``**
+  * Specifies how characters are transformed during shaping. The values can be ‘none’, ‘lowercase’, ‘uppercase’ or ‘capitalize’.
 
 # Support
 
