@@ -14,11 +14,10 @@ showHeader: false
 ## Compatibility
 
 * [Nuke](https://www.foundry.com/products/nuke) by [The Foundry](https://www.foundry.com/)
-* [Fusion](https://www.blackmagicdesign.com/no/products/fusion) by [Blackmagic Design](https://blackmagicdesign.com)
-* [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) by [Blackmagic Design](https://blackmagicdesign.com)
-* [Nucoda](https://filmworkz.com/nucoda/) by [Filmworkz](https://filmworkz.com)
+* [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) and [Fusion](https://www.blackmagicdesign.com/products/fusion) by [Blackmagic Design](https://blackmagicdesign.com)
+* [Nucoda](https://filmworkz.com/nucoda/) and [Phoenix](https://filmworkz.com/phoenix/) by [Filmworkz](https://filmworkz.com)
 * [Natron](https://natrongithub.github.io/)
 
-## Nucoda
+## Filmworkz Nucoda/Phoenix
 
-We provide a custom version for Nucoda [here](nucoda.html).
+We provide a custom version for Filmworkz Nucoda/Phoenix [here](nucoda.html).
