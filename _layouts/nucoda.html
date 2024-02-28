@@ -43,7 +43,7 @@
     <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
     <link rel="alternate" type="application/rss+xml" title="TextOFX news feed" href="{{ site.url }}/feed.xml">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css?v=7">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css?v=8">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW9SRVQ03V"></script>
 <script>
@@ -60,12 +60,13 @@
       <a href="{{ site.url }}"><img src="/assets/images/headerLeft.png"></a>
       <a href="https://openeffects.org" target="_blank"><img class="ofx" src="/assets/images/openfx-icon-white.png"></a>
     </div>
+    <div id="heroN"></div>
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {% if page.image %}<p><img class="hero" src="{{ site.url }}/{{ page.image }}"></p>{% endif %}
         <h1>{{ page.title }}</h1>
         <p class="lead noprint">{{ page.description }}</p>
-        <p><img class="hero nophone" src="{{ site.baseurl }}/assets/images/textofx-nucoda-parameters.png"></p>
+        <!-- <p><img class="hero nophone" src="{{ site.baseurl }}/assets/images/textofx-nucoda-parameters.png"></p> -->
         <div class="blocks">
           <a href="https://download.openfx.no/software/TextOFX/releases/{{ page.rel_branch }}/{{ page.rel_prefix }}-{{ page.latest_version }}-DEMO-{{ page.rel_suffix }}"><div class="btn"><h3>Download Trial</h3></div></a>
           <a href="{{ page.gumroad }}"><div class="btn"><h3>Purchase Now</h3></div></a>

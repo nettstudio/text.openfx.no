@@ -3,7 +3,6 @@ title: "OpenFX Text Integration for Filmworkz Nucoda and Phoenix"
 description: "Elevate your projects with full-fledged text creation and animation seamlessly integrated within your existing Nucoda/Phoenix workflow, powered by our advanced OpenFX text generator."
 layout: nucoda
 permalink: nucoda.html
-image: assets/images/Nucoda_with_Precision_Panel_and_Dolby_Reference_Monitor.jpg
 latest_version: "v1.1.1-37c6551"
 demo_sha256: "142498d9039b6c6a80e4e3f7204cfe116dc0efcae5554cfa30777e3dc52aa3d3"
 rel_sha256: "fc24e24691adb487e4bad4705aee81a7fe0a6eb0d078414c82e10b56a95580f8"
@@ -64,7 +63,7 @@ Extract the contents of the `TextOFX-Nucoda-VERSION-Windows-x64.zip` file to a t
 **Manual Installation**
 
 1. Close Nucoda/Phoenix before proceeding.
-2. Copy `TextOFXNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
+2. Copy `TextNucoda.ofx.bundle` from the extracted folder into `C:\Program Files\Common Files\OFX\Plugins\`.
 3. Launch Nucoda/Phoenix. TextOFX should now be available as an effect under `Text/Text Generator`.
 
 # Fonts

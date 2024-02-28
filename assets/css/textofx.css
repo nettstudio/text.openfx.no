@@ -163,14 +163,6 @@ hr {
     background: unset !important;
 }
 
-@media print {
-    .hero,
-    .btn,
-    .nophone,
-    .noprint,
-    #header { display: none; }
-}
-
 table {
     width: 100%;
 }
@@ -183,3 +175,45 @@ code, pre {
 }
 
 .highlight { background-color: #373737 !important; }
+
+
+#hero, #heroN {
+    object-fit: cover;
+    background-image: url(/assets/images/textofx-hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+#heroN {
+    background-image: url(/assets/images/Nucoda_with_Precision_Panel_and_Dolby_Reference_Monitor.jpg);
+}
+
+@media print {
+    .hero,
+    #hero,
+    #heroN,
+    .btn,
+    .nophone,
+    .noprint,
+    #header { display: none; }
+}
+
+@media screen and (min-width: 600px) {
+    #hero, #heroN {
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 2390px) {
+    #hero, #heroN {
+        min-height: 800px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    #hero, #heroN {
+        min-height: 1000px;
+    }
+}

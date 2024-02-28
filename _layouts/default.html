@@ -43,7 +43,7 @@
     <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
     <link rel="alternate" type="application/rss+xml" title="TextOFX news feed" href="{{ site.url }}/feed.xml">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.url }}/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css?v=7">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ site.url }}/assets/css/textofx.css?v=8">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW9SRVQ03V"></script>
 <script>
@@ -60,12 +60,7 @@
       <a href="https://openeffects.org" target="_blank"><img class="ofx" src="/assets/images/openfx-icon-white.png"></a>
     </div>
     {% if page.showHeader %}
-    <!-- <div id="header_wrap" class="outer"><img id="header_image" src="{{ site.url }}/{{ header_image }}"></div> -->
-    <div class="vad video-contain">
-      <video width="2560" poster="{{ site.url }}/assets/images/textofx-header-001-290.png" playsinline muted autoplay loop>
-      <source src="{{ site.url }}/assets/videos/textofx-header-001.mp4" type="video/mp4">
-    </video>
-    </div>
+    <div id="hero"></div>
     {% endif %}
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
